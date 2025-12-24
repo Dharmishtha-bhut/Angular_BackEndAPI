@@ -1,0 +1,182 @@
+[
+  {
+    "Name": "Wireless Mouse",
+    "Description": "Ergonomic wireless mouse with adjustable DPI.",
+    "Price": 25.99,
+    "PictureUrl": "https://example.com/images/wireless-mouse.jpg",
+    "Type": "Electronics",
+    "Brand": "Logitech",
+    "QuantityStock": 150
+  },
+  {
+    "Name": "Gaming Keyboard",
+    "Description": "Mechanical keyboard with RGB lighting.",
+    "Price": 79.99,
+    "PictureUrl": "https://example.com/images/gaming-keyboard.jpg",
+    "Type": "Electronics",
+    "Brand": "Corsair",
+    "QuantityStock": 100
+  },
+  {
+    "Name": "Bluetooth Speaker",
+    "Description": "Portable Bluetooth speaker with deep bass.",
+    "Price": 49.99,
+    "PictureUrl": "https://example.com/images/bluetooth-speaker.jpg",
+    "Type": "Electronics",
+    "Brand": "JBL",
+    "QuantityStock": 200
+  },
+  {
+    "Name": "Running Shoes",
+    "Description": "Lightweight running shoes for daily workouts.",
+    "Price": 59.99,
+    "PictureUrl": "https://example.com/images/running-shoes.jpg",
+    "Type": "Footwear",
+    "Brand": "Nike",
+    "QuantityStock": 75
+  },
+  {
+    "Name": "Smartphone",
+    "Description": "Latest smartphone with high-resolution camera.",
+    "Price": 699.99,
+    "PictureUrl": "https://example.com/images/smartphone.jpg",
+    "Type": "Electronics",
+    "Brand": "Samsung",
+    "QuantityStock": 50
+  },
+  {
+    "Name": "Laptop Backpack",
+    "Description": "Durable backpack with multiple compartments.",
+    "Price": 39.99,
+    "PictureUrl": "https://example.com/images/laptop-backpack.jpg",
+    "Type": "Accessories",
+    "Brand": "Samsonite",
+    "QuantityStock": 120
+  },
+  {
+    "Name": "Digital Watch",
+    "Description": "Water-resistant digital watch with stopwatch.",
+    "Price": 29.99,
+    "PictureUrl": "https://example.com/images/digital-watch.jpg",
+    "Type": "Accessories",
+    "Brand": "Casio",
+    "QuantityStock": 180
+  },
+  {
+    "Name": "Electric Kettle",
+    "Description": "Fast-boiling electric kettle with auto shut-off.",
+    "Price": 24.99,
+    "PictureUrl": "https://example.com/images/electric-kettle.jpg",
+    "Type": "Home Appliances",
+    "Brand": "Philips",
+    "QuantityStock": 90
+  },
+  {
+    "Name": "Yoga Mat",
+    "Description": "Non-slip yoga mat for home and studio use.",
+    "Price": 19.99,
+    "PictureUrl": "https://example.com/images/yoga-mat.jpg",
+    "Type": "Fitness",
+    "Brand": "Gaiam",
+    "QuantityStock": 250
+  },
+  {
+    "Name": "Noise-Cancelling Headphones",
+    "Description": "Over-ear headphones with active noise cancellation.",
+    "Price": 199.99,
+    "PictureUrl": "https://example.com/images/noise-cancelling-headphones.jpg",
+    "Type": "Electronics",
+    "Brand": "Sony",
+    "QuantityStock": 60
+  },
+  {
+    "Name": "Coffee Maker",
+    "Description": "Programmable coffee maker with 12-cup capacity.",
+    "Price": 49.99,
+    "PictureUrl": "https://example.com/images/coffee-maker.jpg",
+    "Type": "Home Appliances",
+    "Brand": "Keurig",
+    "QuantityStock": 80
+  },
+  {
+    "Name": "Smartwatch",
+    "Description": "Fitness tracking smartwatch with heart rate monitor.",
+    "Price": 149.99,
+    "PictureUrl": "https://example.com/images/smartwatch.jpg",
+    "Type": "Electronics",
+    "Brand": "Apple",
+    "QuantityStock": 40
+  },
+  {
+    "Name": "Desk Lamp",
+    "Description": "LED desk lamp with adjustable brightness.",
+    "Price": 14.99,
+    "PictureUrl": "https://example.com/images/desk-lamp.jpg",
+    "Type": "Home Decor",
+    "Brand": "Ikea",
+    "QuantityStock": 300
+  },
+  {
+    "Name": "Water Bottle",
+    "Description": "Insulated stainless steel water bottle.",
+    "Price": 12.99,
+    "PictureUrl": "https://example.com/images/water-bottle.jpg",
+    "Type": "Fitness",
+    "Brand": "Hydro Flask",
+    "QuantityStock": 500
+  },
+  {
+    "Name": "Action Camera",
+    "Description": "Waterproof action camera with 4K recording.",
+    "Price": 299.99,
+    "PictureUrl": "https://example.com/images/action-camera.jpg",
+    "Type": "Electronics",
+    "Brand": "GoPro",
+    "QuantityStock": 30
+  },
+  {
+    "Name": "Electric Toothbrush",
+    "Description": "Rechargeable electric toothbrush with multiple modes.",
+    "Price": 39.99,
+    "PictureUrl": "https://example.com/images/electric-toothbrush.jpg",
+    "Type": "Personal Care",
+    "Brand": "Oral-B",
+    "QuantityStock": 100
+  },
+  {
+    "Name": "Gaming Chair",
+    "Description": "Ergonomic gaming chair with lumbar support.",
+    "Price": 129.99,
+    "PictureUrl": "https://example.com/images/gaming-chair.jpg",
+    "Type": "Furniture",
+    "Brand": "DXRacer",
+    "QuantityStock": 45
+  },
+  {
+    "Name": "Wireless Charger",
+    "Description": "Fast wireless charger for smartphones.",
+    "Price": 19.99,
+    "PictureUrl": "https://example.com/images/wireless-charger.jpg",
+    "Type": "Electronics",
+    "Brand": "Anker",
+    "QuantityStock": 200
+  },
+  {
+    "Name": "Portable Power Bank",
+    "Description": "High-capacity power bank with dual USB ports.",
+    "Price": 29.99,
+    "PictureUrl": "https://example.com/images/power-bank.jpg",
+    "Type": "Electronics",
+    "Brand": "RAVPower",
+    "QuantityStock": 150
+  },
+  {
+    "Name": "Fitness Tracker",
+    "Description": "Activity tracker with sleep monitoring.",
+    "Price": 49.99,
+    "PictureUrl": "https://example.com/images/fitness-tracker.jpg",
+    "Type": "Fitness",
+    "Brand": "Fitbit",
+    "QuantityStock": 100
+  }
+]
