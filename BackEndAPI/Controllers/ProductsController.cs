@@ -1,5 +1,6 @@
 ﻿using Backend.Core.Entities;
 using Backend.Core.Interfaces;
+using Backend.Core.Specification;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -9,20 +10,23 @@ namespace BackEndAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController(IProductRepository _productRepository) : ControllerBase
+    public class ProductsController(IGenericRepository<Product> _productRepository) : ControllerBase
     {
 
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
         {
-            var products = await _productRepository.GetProductsAsync(brand,type,sort);
+            var spec = new ProductSpecification(brand, type,sort);
+
+            var products = await _productRepository.ListAsync(spec);
+
             return Ok(products);
         }
 
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var product = await _productRepository.GetProductByIdAsync(id);
+            var product = await _productRepository.GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
@@ -33,7 +37,7 @@ namespace BackEndAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
         {
-            _productRepository.AddProductAsync(product);
+            _productRepository.Add(product);
             var success = await _productRepository.SaveChangesAsync();
             if (!success)
             {
@@ -50,12 +54,12 @@ namespace BackEndAPI.Controllers
                 return BadRequest("Product ID mismatch");
             }
 
-            if (!_productRepository.ProductExistsAsync(id))
+            if (!_productRepository.EntityExists(id))
             {
                 return NotFound();
             }
 
-            _productRepository.UpdateProductAsync(product);
+            _productRepository.Update(product);
             var success = await _productRepository.SaveChangesAsync();
             if (!success)
             {
@@ -67,13 +71,13 @@ namespace BackEndAPI.Controllers
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteProduct(int id)
         {
-            var product = await _productRepository.GetProductByIdAsync(id);
+            var product = await _productRepository.GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
 
-            _productRepository.DeleteProductAsync(product);
+            _productRepository.Delete(product);
             var success = await _productRepository.SaveChangesAsync();
             if (!success)
             {
@@ -86,16 +90,18 @@ namespace BackEndAPI.Controllers
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<string>>> GetBrands()
         {
-            var brands = await _productRepository.GetBrandsAsync();
-            return Ok(brands);
+            var spec = new BrandListSpecification();
+
+            return Ok(await _productRepository.ListAsync(spec));
         }
 
         // New endpoint to get distinct types
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
         {
-            var types = await _productRepository.GetTypesAsync();
-            return Ok(types);
+            var spec = new TypeListSpecification();
+
+            return Ok(await _productRepository.ListAsync(spec));
         }
     }
 }
